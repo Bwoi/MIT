@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "author": "Ilya Eremin - RU MAS TEAM",
+  "name" : "MIT",
+  "version" : "0.0.2",
+  "browser_action" : {
+    "default_icon" : "./i/mit.png",
+    "default_title" : "Работа с MIT - это просто",
+    "default_popup" : "popup.html"
+  },
+  "background": {
+    "scripts": ["./js/bg/main.js"]
+  },
+  "content_scripts" : [{
+    "matches": [ "http://*/*", "https://*/*" ],
+    "js" : [
+      "./js/interface/preHarvester.js"
+    ],
+    "run_at" : "document_start"
+  }],
+  "permissions" : [ "http://emear-mit.avonauthoring.com/*", "tabs", "activeTab" ]
+}

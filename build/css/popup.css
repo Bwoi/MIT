@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+ul {
+    list-style-type: none;
+
+}
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li {
+
+}
+li a.hundred {
+    text-decoration: none;
+    color: #2d2d2d;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 20px;
+    white-space: nowrap;
+    margin: 5px;
+    background: #e3f16c;
+}
+li a:hover {
+    text-decoration: none;
+    background: #c4d62d;
+}

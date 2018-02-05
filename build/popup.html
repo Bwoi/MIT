@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="./js/interface/popup.js"></script>
+	<!--<link rel="stylesheet" href="./css/popup.css">-->
+	<link rel="stylesheet" href="./css/more-than-100.css">
+</head>
+<body>
+
+<div class="wrap">
+	<div id="message">
+		<div>Прогресс</div>
+		<div>Завершено: <span id="completed">0</span> из <span id="amount"></span></div>
+		<div>Не найдены: <span id="undefined"></span></div>
+		<div id="result"></div>
+	</div>
+	<h3>Больше, чем 100 продуктов</h3>
+	<form name="form">
+		<div class="input_block">
+			<label for="codes">Все коды (прим:63379, 60215)</label>
+			<input type="text" name="codes" id="codes">
+		</div>
+		<div class="input_block">
+			<label for="codes">Заголовок в Name (прим:СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ!)</label>
+			<input type="text" name="codes" id="forName">
+		</div>
+		<div class="input_block">
+			<label for="codes">Заголовок в Desc (прим:Компактная пудра "Люкс" всего за 329 руб. при покупке любых* товаров на сайте на сумму 299 руб.)</label>
+			<input type="text" name="codes" id="forDescription">
+		</div>
+		<div class="input_block">
+			<label for="codes">Оформление для заголовка в Desc (прим:color: #ed008c; font-size: small; font-weight: bold;)<br /><strong>!!!!!если не заполнено!!!!!</strong> берет только то, что в Desc вместе со стилями, если они там есть(прим:&lt;span style="color: #ed008c; font-size: small;">&lt;strong>Компактная пудра "Люкс" всего за 329 руб. при покупке любых* товаров на сайте на сумму 299 руб.&nbsp;&lt;/strong>&lt;/span>), или просто текст соответственно (прим:Компактная пудра "Люкс" всего за 329 руб. при покупке любых* товаров на сайте на сумму 299 руб.)</label>
+			<input type="text" name="codes" id="stylesForDescription">
+		</div>
+		<div class="input_block">
+			<label for="codes">Описание под сноской (прим:*Предложение распространяется на ограниченный список товаров. Подробности уточняйте у Представителя Avon при заказе.)</label>
+			<input type="text" name="codes" id="forNotes">
+		</div>
+		<div class="start_process" id="startProcess">
+			Начать
+		</div>
+	</form>
+</div>
+<!--<ul>-->
+	<!--<li class="hundred"><a class="hundred" href="./hundreds.html" id="hundred">100 продуктов</a></li>-->
+<!--</ul>-->
+</body>
+</html>
